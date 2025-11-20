@@ -1,0 +1,122 @@
+{
+  "Scenario 1: Normal + Known Attack": {
+    "metrics": {
+      "scenario": "Scenario 1: Normal + Known Attack",
+      "n_samples": 1200,
+      "n_attacks": 200,
+      "n_normal": 1000,
+      "accuracy": 0.8366666666666667,
+      "precision": 1.0,
+      "recall": 0.02,
+      "f1": 0.0392156862745098,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.98,
+      "latency_per_sample_ms": 101.63914700349171,
+      "throughput_samples_per_sec": 9.838728772149631,
+      "preprocessing_time": 0.7014329433441162,
+      "detection_time": 121.96697640419006,
+      "total_time": 122.66840934753418,
+      "cpu_percent": 0.0,
+      "memory_mb": 386.49609375,
+      "confusion_matrix": {
+        "tn": 1000,
+        "fp": 0,
+        "fn": 196,
+        "tp": 4
+      },
+      "signature_detections": 109,
+      "ml_detections": 164,
+      "hybrid_detections": 4,
+      "conflicts": 105,
+      "avg_confidence": 0.8979130589729118,
+      "avg_signature_confidence": 0.2583888888888889,
+      "avg_ml_confidence": 0.08386374233358042
+    },
+    "confusion_matrix": {
+      "tn": 1000,
+      "fp": 0,
+      "fn": 196,
+      "tp": 4
+    }
+  },
+  "Scenario 2: Normal + Novel Attack": {
+    "metrics": {
+      "scenario": "Scenario 2: Normal + Novel Attack",
+      "n_samples": 1200,
+      "n_attacks": 200,
+      "n_normal": 1000,
+      "accuracy": 0.8333333333333334,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 1.0,
+      "latency_per_sample_ms": 96.44801020622253,
+      "throughput_samples_per_sec": 10.368280256501166,
+      "preprocessing_time": 1.525233507156372,
+      "detection_time": 115.73761224746704,
+      "total_time": 117.26284575462341,
+      "cpu_percent": 0.0,
+      "memory_mb": 387.25390625,
+      "confusion_matrix": {
+        "tn": 1000,
+        "fp": 0,
+        "fn": 200,
+        "tp": 0
+      },
+      "signature_detections": 69,
+      "ml_detections": 151,
+      "hybrid_detections": 0,
+      "conflicts": 69,
+      "avg_confidence": 0.9178132488945816,
+      "avg_signature_confidence": 0.22813888888888886,
+      "avg_ml_confidence": 0.06289829447951066
+    },
+    "confusion_matrix": {
+      "tn": 1000,
+      "fp": 0,
+      "fn": 200,
+      "tp": 0
+    }
+  },
+  "Scenario 3: Normal + Known + Novel Attack": {
+    "metrics": {
+      "scenario": "Scenario 3: Normal + Known + Novel Attack",
+      "n_samples": 1400,
+      "n_attacks": 400,
+      "n_normal": 1000,
+      "accuracy": 0.7171428571428572,
+      "precision": 1.0,
+      "recall": 0.01,
+      "f1": 0.019801980198019802,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.99,
+      "latency_per_sample_ms": 124.76939593042647,
+      "throughput_samples_per_sec": 8.014785938032569,
+      "preprocessing_time": 0.8443772792816162,
+      "detection_time": 174.67715430259705,
+      "total_time": 175.52153158187866,
+      "cpu_percent": 0.0,
+      "memory_mb": 187.4375,
+      "confusion_matrix": {
+        "tn": 1000,
+        "fp": 0,
+        "fn": 396,
+        "tp": 4
+      },
+      "signature_detections": 159,
+      "ml_detections": 299,
+      "hybrid_detections": 4,
+      "conflicts": 155,
+      "avg_confidence": 0.8512131590598385,
+      "avg_signature_confidence": 0.26361904761904764,
+      "avg_ml_confidence": 0.12447820698456184
+    },
+    "confusion_matrix": {
+      "tn": 1000,
+      "fp": 0,
+      "fn": 396,
+      "tp": 4
+    }
+  }
+}
