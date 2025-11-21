@@ -6,7 +6,7 @@ It supports **supervised** and **unsupervised** anomaly detection models and inc
 
 ---
 
-## 📂 Project Structure
+## 📂 Project Structure  
 
 ```
 Firewall_Frontend-main/
