@@ -14,7 +14,7 @@ python train_models.py
 This will:
 - Load and preprocess the dataset
 - Train supervised models (RF, LR, XGBoost)
-- Train unsupervised models (Isolation Forest, One-Class SVM, Autoencoder)
+- help Train unsupervised models (Isolation Forest, One-Class SVM, Autoencoder)
 - Create and save the hybrid detector
 - Save all models to `models/` directory
 
