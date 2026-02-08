@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIDS Intrusion Detector</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Network Intrusion Detection System</h1>
+            <p>Enter network traffic details to analyze for potential intrusions.</p>
+        </header>
+
+        <main>
+            <form id="predictionForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="Source_IP">Source IP</label>
+                        <input type="text" id="Source_IP" name="Source_IP" placeholder="192.168.1.10" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Destination_IP">Destination IP</label>
+                        <input type="text" id="Destination_IP" name="Destination_IP" placeholder="10.0.0.5" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Port">Port</label>
+                        <input type="number" id="Port" name="Port" placeholder="80" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Request_Type">Request Type</label>
+                        <select id="Request_Type" name="Request_Type" required>
+                            <option value="HTTP">HTTP</option>
+                            <option value="HTTPS">HTTPS</option>
+                            <option value="SSH">SSH</option>
+                            <option value="FTP">FTP</option>
+                            <option value="SMTP">SMTP</option>
+                            <option value="DNS">DNS</option>
+                            <option value="Telnet">Telnet</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Protocol">Protocol</label>
+                        <select id="Protocol" name="Protocol" required>
+                            <option value="TCP">TCP</option>
+                            <option value="UDP">UDP</option>
+                            <option value="ICMP">ICMP</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Payload_Size">Payload Size (bytes)</label>
+                        <input type="number" id="Payload_Size" name="Payload_Size" placeholder="1024" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="User_Agent">User Agent</label>
+                        <select id="User_Agent" name="User_Agent" required>
+                            <option value="Mozilla/5.0">Mozilla/5.0</option>
+                            <option value="curl/7.68.0">curl/7.68.0</option>
+                            <option value="Wget/1.20.3">Wget/1.20.3</option>
+                            <option value="python-requests/2.25.1">python-requests/2.25.1</option>
+                            <option value="nmap/7.80">nmap/7.80</option>
+                            <option value="Nikto/2.1.6">Nikto/2.1.6</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Status">Status</label>
+                        <select id="Status" name="Status" required>
+                            <option value="Success">Success</option>
+                            <option value="Failure">Failure</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Scan_Type">Scan Type</label>
+                        <select id="Scan_Type" name="Scan_Type" required>
+                            <option value="Normal">Normal</option>
+                            <option value="PortScan">PortScan</option>
+                            <option value="BotAttack">BotAttack</option>
+                            <option value="Infiltration">Infiltration</option>
+                        </select>
+                    </div>
+
+
+                </div>
+
+                <button type="submit" id="predictBtn">Analyze Traffic</button>
+            </form>
+
+            <div id="result" class="result-container hidden">
+                <h2>Analysis Result</h2>
+                <div id="resultContent"></div>
+            </div>
+            <div id="error" class="error-container hidden">
+                <h2>Error</h2>
+                <div id="errorContent"></div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
