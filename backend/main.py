@@ -8,14 +8,14 @@ from pydantic import BaseModel
 from typing import Optional
 from datetime import datetime
 
-# Add ML-NIDS/src to path for imports
+# Adding the ML-NIDS/src to path for imports
 current_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(current_dir)
 ml_nids_path = os.path.join(parent_dir, 'ML-NIDS')
 src_path = os.path.join(ml_nids_path, 'src')
 sys.path.insert(0, src_path)
 
-# Try imports
+# Trying imports
 try:
     from data_preprocessing import DataPreprocessor
     from hybrid_detection import HybridDetector
