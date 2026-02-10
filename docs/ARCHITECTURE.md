@@ -4,7 +4,7 @@
 
 The Network Intrusion Detection System (NIDS) is a hybrid ML-based system that combines signature-based detection with machine learning models to detect both known and novel (zero-day) network intrusions.
 
-## System Components
+## The System Components 
 
 ### 1. Data Capture Module
 - **Location**: `src/data_preprocessing.py`

@@ -15,7 +15,7 @@ ml_nids_path = os.path.join(parent_dir, 'ML-NIDS')
 src_path = os.path.join(ml_nids_path, 'src')
 sys.path.insert(0, src_path)
 
-# Trying imports
+# Trying the imports
 try:
     from data_preprocessing import DataPreprocessor
     from hybrid_detection import HybridDetector
